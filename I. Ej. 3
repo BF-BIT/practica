@@ -1,0 +1,31 @@
+3) Crear un programa que pida al usuario dos números enteros, y que imprima la suma, 
+producto, diferencia, cociente y resto de los números.
+
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2;
+    
+    printf("Ingrese el primer numero: ");
+    scanf("%d", &num1);
+    printf("Ingrese el segundo numero: ");
+    scanf("%d", &num2);
+
+    printf("Suma: %d + %d = %d\n", num1, num2, num1 + num2);
+    
+    printf("Producto: %d * %d = %d\n", num1, num2, num1 * num2);
+    
+    printf("Diferencia: %d - %d = %d\n", num1, num2, num1 - num2);
+    
+    if(num2 != 0){
+        printf("Cociente: %d / %d = %d\n", num1, num2, num1 / num2);
+        
+        printf("Resto: %d %% %d = %d\n", num1, num2, num1 % num2);
+    } else{
+        printf("No se puede dividir");
+    }
+
+    return 0;
+}
+
