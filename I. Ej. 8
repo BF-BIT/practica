@@ -1,0 +1,22 @@
+8) Crear un programa que pida dos números enteros al usuario, y que informe si el 
+primero es un múltiplo del segundo o no.
+
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2;
+    
+    printf("Ingrese el primer numero: ");
+    scanf("%d", &num1);
+    printf("\nIngrese el segundo numero: ");
+    scanf("%d", &num2);
+    
+    if(num2 != 0 && num1 % num2 ==0){
+    	printf("\n%d Es multiplo de %d\n\n", num1, num2);
+	}else{
+		printf("\n%d NO es multiplo de %d\n\n", num1, num2);
+	}
+    
+    return 0;
+}
