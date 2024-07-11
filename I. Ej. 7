@@ -1,0 +1,20 @@
+7) Crear un programa que informe si un número ingresado es par o impar.
+
+#include <stdio.h>
+
+int main()
+{
+    int num;
+
+    printf("Ingrese el primer numero entero: ");
+    scanf("%d", &num);
+    
+    if(num % 2 == 0){
+        printf("Este numero es PAR ");
+    }else{
+        printf("Este numero es IMPAR ");
+    }
+
+
+    return 0;
+}
