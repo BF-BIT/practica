@@ -1,0 +1,26 @@
+9) Crear un programa que reciba cinco números, y que determine e imprima la cantidad 
+de números negativos, positivos, y la cantidad de ceros recibidos.
+
+#include <stdio.h>
+
+int main()
+{
+    int neg=0, pos=0, ceros=0, num=0;
+	for(int i=0;i<5;++i){
+		printf("Ingresa el numero %d: ", i + 1);
+		scanf("%d", &num);
+		if(num > 0){
+			pos++;
+		} else if(num < 0){
+			neg++;
+		} else{
+			ceros++;
+		}
+	}
+	printf("\nCantidad de numeros Positivos: %d", pos);
+	printf("\nCantidad de numeros Negativos: %d", neg);
+	printf("\nCantidad de Ceros encontrados: %d", ceros);
+
+    
+    return 0;
+}
